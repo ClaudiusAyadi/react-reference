@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *,
 *::before,
 *::after {
@@ -14,7 +10,8 @@
 body {
 	font-family: Poppins, sans-serif;
 	height: 100%;
-	margin: 4rem auto;
+	margin: 1.5rem auto 0;
+	max-height: fit-content;
 	max-width: 620px;
 	width: 100%;
 }
@@ -30,21 +27,21 @@ p {
 }
 
 h2 {
-	font-size: 14px;
+	font-size: 1.125rem
 }
 
-h3 {
-	font-size: 12px;
+h3,time {
+	font-size: 1rem;
 }
 
 header {
 	align-items: center;
 	border-bottom: 4px solid red;
 	display: flex;
-	font-size: 10px;
+	font-size: 0.625rem;
 	gap: 1rem;
 	justify-content: space-between;
-	padding-bottom: 2rem;
+	padding-bottom: 1.5rem;
 	margin-bottom: 4rem;
 
 	figure,
@@ -55,7 +52,7 @@ header {
 	img {
 		block-size: 100%;
 		display: inline-block;
-		max-width: 12rem;
+		max-width: 16rem;
 	}
 }
 
@@ -76,10 +73,6 @@ main {
 		margin: 1rem 0;
 	}
 
-	p,
-	time {
-		font-size: 12px;
-	}
 
 	.content {
 		margin: 1rem 0;
@@ -93,62 +86,9 @@ main {
 }
 
 footer {
-	border-bottom: 10px solid red;
-	padding-bottom: 2rem;
+	border-bottom: 1rem solid red;
+	padding-block: 4rem 2rem;
 	margin-top: auto;
 
-	p {
-		font-size: 10px;
-	}
 }
 
-.stamp {
-	width: 400px;
-	height: calc(400 / 2) px;
-	position: relative;
-
-	.oval {
-		width: 100%;
-		height: 100%;
-		border: 3px solid #000;
-		border-radius: 50%;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		padding: 50px 0;
-	}
-
-	.text-top,
-	.text-bottom {
-		font-family: Arial, sans-serif;
-		font-weight: bold;
-		font-size: 20px;
-		letter-spacing: 1px;
-		transform: scale(0.8, 1);
-	}
-
-	.center-text {
-		font-family: Arial, sans-serif;
-		font-size: 18px;
-		text-align: center;
-		line-height: 1.5;
-	}
-
-	.stars {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		font-size: 14px;
-		letter-spacing: 2px;
-	}
-
-	.stars.left {
-		left: 20px;
-	}
-
-	.stars.right {
-		right: 20px;
-	}
-}
