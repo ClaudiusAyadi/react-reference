@@ -13,7 +13,6 @@ body {
 	margin: 1.5rem auto 0;
 	max-height: fit-content;
 	max-width: 50rem;
-	padding: 0 1rem;
 	width: 100%;
 }
 
@@ -39,7 +38,7 @@ header {
 	align-items: center;
 	border-bottom: 4px solid red;
 	display: flex;
-	font-size: 0.625rem;
+	font-size: 0.7rem;
 	gap: 1rem;
 	justify-content: space-between;
 	padding-bottom: 1.5rem;
@@ -53,7 +52,7 @@ header {
 	img {
 		block-size: 100%;
 		display: inline-block;
-		max-width: 16rem;
+		max-width: 18rem;
 	}
 }
 
@@ -79,16 +78,11 @@ main {
 		margin: 1rem 0;
 	}
 
-	.signature {
-		block-size: 100%;
-		max-width: 6rem;
-		margin-top: 1rem;
-	}
 }
 
 footer {
 	border-bottom: 1rem solid red;
-	padding-block: 4rem 2rem;
+	padding-block: 8rem 4rem;
 	margin-top: auto;
 
 }
