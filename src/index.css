@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+	height: 100%;
+	margin: 4rem auto;
+	max-width: 620px;
+	width: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+h3 {
+	font-size: 12px;
+}
+
+header {
+	align-items: center;
+	border-bottom: 4px solid red;
+	display: flex;
+	font-size: 10px;
+	gap: 1rem;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+	margin-bottom: 4rem;
+
+	figure,
+	picture {
+		max-width: fit-content;
+	}
+
+	img {
+		block-size: 100%;
+		display: inline-block;
+		max-width: 12rem;
+	}
+}
+
+.contact {
+	display: flex;
+	gap: 1rem;
+
+	h2 {
+		color: red;
+		font-size: inherit;
+	}
+}
+
+main {
+	.to {
+		display: flex;
+		justify-content: space-between;
+		margin: 1rem 0;
+	}
+
+	p,
+	time {
+		font-size: 12px;
+	}
+
+	.content {
+		margin: 1rem 0;
+	}
+
+	.signature {
+		block-size: 100%;
+		max-width: 6rem;
+		margin-top: 1rem;
+	}
+}
+
+footer {
+	border-bottom: 10px solid red;
+	padding-bottom: 2rem;
+	margin-top: auto;
+
+	p {
+		font-size: 10px;
+	}
+}
+
+.stamp {
+	width: 400px;
+	height: calc(400 / 2) px;
+	position: relative;
+
+	.oval {
+		width: 100%;
+		height: 100%;
+		border: 3px solid #000;
+		border-radius: 50%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px 0;
+	}
+
+	.text-top,
+	.text-bottom {
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		letter-spacing: 1px;
+		transform: scale(0.8, 1);
+	}
+
+	.center-text {
+		font-family: Arial, sans-serif;
+		font-size: 18px;
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	.stars {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 14px;
+		letter-spacing: 2px;
+	}
+
+	.stars.left {
+		left: 20px;
+	}
+
+	.stars.right {
+		right: 20px;
+	}
+}
