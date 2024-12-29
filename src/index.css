@@ -13,6 +13,7 @@ body {
 	margin: 1.5rem auto 0;
 	max-height: fit-content;
 	max-width: 50rem;
+	padding: 0 1rem;
 	width: 100%;
 }
 
